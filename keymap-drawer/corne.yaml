@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - '?'
+  - {t: END, h: HOME}
   - '&td0'
   - A
   - S
@@ -27,7 +27,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: END, h: HOME}
+  - $$mdi:apple-keyboard-option$$
   - Z
   - X
   - C
@@ -196,3 +196,6 @@ layers:
   - F10
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
+combos:
+- p: [40, 41]
+  k: $$mdi:apple-keyboard-control$$
