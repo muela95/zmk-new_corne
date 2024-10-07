@@ -43,10 +43,10 @@ layers:
   - $$mdi:keyboard-space$$
   - LGUI
   - lower
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
+  - '3'
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', h: '3'}
-  - raise
+  - {t: '$$mdi:keyboard-space$$', h: raise}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   lower:
