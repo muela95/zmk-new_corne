@@ -27,7 +27,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-control$$', h: raise}
   - Z
   - X
   - C
@@ -57,7 +57,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -125,7 +125,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - OUT USB
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -199,3 +199,4 @@ layers:
 combos:
 - p: [40, 41]
   k: $$mdi:apple-keyboard-control$$
+  l: [default]
