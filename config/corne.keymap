@@ -133,9 +133,9 @@
 
             bindings = <
 &trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp DOLLAR     &kp RA(SINGLE_QUOTE)   &kp RA(BACKSLASH)      &kp EQUAL             &kp LS(N1)                &kp CARET
-&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS              &kp UNDER                 &kp LA(N1)
+&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS              &kp UNDER                 &kp RA(N1)
 &trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp RA(GRAVE)  &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp PERCENT
-                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp LA(N2)     &kp RIGHT_PARENTHESIS  &trans
+                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RA(N2)     &kp RIGHT_PARENTHESIS  &trans
                                                                            &mkp LCLK
             >;
 
