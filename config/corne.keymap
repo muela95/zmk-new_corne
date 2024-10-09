@@ -13,9 +13,7 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
-&lt {
-    tapping-term-ms = <300>;
-};
+&lt { tapping-term-ms = <300>; };
 
 / {
     behaviors {
@@ -114,7 +112,7 @@
 
             bindings = <
 &trans           &kp EXCLAMATION  &kp DOUBLE_QUOTES  &trans           &kp DOLLAR       &kp PERCENT        &mmv MOVE_UP     &kp AMPERSAND  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&kp CAPSLOCK     &bt BT_CLR_ALL   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp TAB        &kp N4  &kp N5      &kp N6  &kp LS(Z)          &kp PG_UP
+&kp CAPSLOCK     &bt BT_CLR_ALL   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &kp TAB        &kp N4  &kp N5      &kp N6  &kp Z              &kp PG_UP
 &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI    &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD    &mmv MOVE_LEFT   &trans         &kp N1  &kp N2      &kp N3  &kp RIGHT_BRACE    &kp PG_DN
                                   &kp C_MUTE         &trans           &trans           &trans             &mmv MOVE_RIGHT  &kp ENTER      &kp N0  &kp LS(N7)
                                                                                                           &mkp LCLK
@@ -134,10 +132,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp DOLLAR     &kp RA(SINGLE_QUOTE)   &kp RA(BACKSLASH)      &kp LPAR              &kp RPAR                  &kp BSPC
-&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS              &kp UNDER                 &kp DOUBLE_QUOTES
-&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp RA(GRAVE)  &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp COLON
-                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET        &kp RIGHT_PARENTHESIS  &trans
+&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp DOLLAR     &kp RA(SINGLE_QUOTE)   &kp RA(BACKSLASH)      &kp EQUAL             &kp LS(N1)                &kp CARET
+&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS              &kp UNDER                 &kp LA(N1)
+&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp RA(GRAVE)  &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp PERCENT
+                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp LA(N2)     &kp RIGHT_PARENTHESIS  &trans
                                                                            &mkp LCLK
             >;
 
