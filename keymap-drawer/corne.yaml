@@ -39,7 +39,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - '&R_declaracion'
   - MUTE
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -70,7 +70,7 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -94,7 +94,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - INS
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '0', s: )}
   - {t: /, s: '?'}
   - $$mdi:mouse-left-click-outline$$
@@ -106,7 +106,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&'
+  - $
   - {t: AGr+ ', s: AGr+ "}
   - {t: AGr+ \, s: AGr+ |}
   - (
@@ -135,8 +135,8 @@ layers:
   - {t: AGr+ `, s: AGr+ ~}
   - {t: 'AGr+ [', s: 'AGr+ {'}
   - {t: 'AGr+ ]', s: 'AGr+ }'}
-  - '}'
-  - {t: ;, s: ':'}
+  - {t: \, s: '|'}
+  - {t: Sft+ \, s: Sft+ |}
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -144,7 +144,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   '3':
@@ -298,3 +298,5 @@ combos:
 - p: [40, 41]
   k: LEFT WIN
   l: [default]
+- p: [0, 1]
+  k: $$mdi:keyboard-esc$$
