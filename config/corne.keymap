@@ -117,9 +117,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp RA(LEFT_BRACKET)   &kp RA(LEFT_BRACE)    &kp LPAR  &kp RPAR       &kp BSPC
-&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT     &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp PLUS  &kp MINUS      &kp DOUBLE_QUOTES
-&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp RA(RIGHT_BRACKET)  &kp RA(LBRC)          &kp RBRC  &kp SEMICOLON  &kp COLON
+&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp LPAR  &kp RPAR       &kp BSPC
+&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT     &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS  &kp UNDER      &kp DOUBLE_QUOTES
+&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp RA(RIGHT_BRACKET)  &kp RA(LBRC)           &kp RBRC  &kp SEMICOLON  &kp COLON
                           &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans                 &trans
                                                                            &mkp LCLK
             >;
