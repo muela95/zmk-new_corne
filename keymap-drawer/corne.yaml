@@ -74,7 +74,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - Sft+ Z
+  - Z
   - PG UP
   - RGB TOG
   - RGB EFF
@@ -109,9 +109,9 @@ layers:
   - $
   - {t: AGr+ ', s: AGr+ "}
   - {t: AGr+ \, s: AGr+ |}
-  - (
-  - )
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '=', s: +}
+  - {t: Sft+ 1, s: Sft+ !}
+  - ^
   - $$mdi:alpha-w-box$$
   - $$mdi:bluetooth-off$$
   - $$mdi:mouse-left-click-outline$$
@@ -124,7 +124,7 @@ layers:
   - (
   - +
   - _
-  - '"'
+  - {t: Alt+ 1, s: Alt+ !}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -137,13 +137,13 @@ layers:
   - {t: 'AGr+ ]', s: 'AGr+ }'}
   - \
   - Sft+ \
-  - ':'
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: Alt+ 2, s: Alt+ @}
   - )
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
