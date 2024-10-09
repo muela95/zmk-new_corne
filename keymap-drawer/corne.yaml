@@ -1,12 +1,12 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   default:
-  - {t: '$$mdi:keyboard-esc$$', h: '3'}
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
   - R
-  - T
+  - {t: T, h: lower}
   - $$mdi:arrow-up-bold$$
   - Y
   - U
@@ -19,7 +19,7 @@ layers:
   - S
   - D
   - F
-  - G
+  - {t: G, h: raise}
   - $$mdi:arrow-down-bold$$
   - H
   - J
@@ -27,12 +27,12 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:apple-keyboard-control$$', h: raise}
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
-  - B
+  - {t: B, h: '3'}
   - $$mdi:arrow-left-bold$$
   - N
   - M
@@ -41,7 +41,7 @@ layers:
   - {t: /, s: '?'}
   - {t: 'Sft+Alt+ $$mdi:keyboard-tab$$', h: toggle}
   - MUTE
-  - {t: '$$mdi:apple-keyboard-control$$', h: lower}
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-right-bold$$
@@ -55,7 +55,7 @@ layers:
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - $
-  - '%'
+  - {t: '%', type: held}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&'
   - {t: '7', s: '&'}
@@ -90,7 +90,7 @@ layers:
   - '}'
   - PG DN
   - $$mdi:volume-off$$
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -117,7 +117,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '&mkp MB4', type: held}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '@'
   - '*'
@@ -125,7 +125,7 @@ layers:
   - +
   - {t: '-', s: _}
   - '"'
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   '3':
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,7 +179,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - {t: '&mkp MB5', type: held}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
