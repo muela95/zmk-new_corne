@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   default:
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -39,9 +39,9 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&alt_tab'
+  - $$mdi:apple-keyboard-option$$
   - MUTE
-  - $$mdi:alpha-w-box$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-right-bold$$
@@ -106,7 +106,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
+  - '&'
   - {t: AGr+ ', s: AGr+ "}
   - {t: AGr+ \, s: AGr+ |}
   - (
@@ -132,9 +132,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - _
+  - {t: AGr+ `, s: AGr+ ~}
+  - {t: 'AGr+ [', s: 'AGr+ {'}
   - {t: 'AGr+ ]', s: 'AGr+ }'}
-  - AGr+ {
   - '}'
   - {t: ;, s: ':'}
   - ':'
