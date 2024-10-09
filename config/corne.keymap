@@ -69,7 +69,7 @@
         R_declaracion: R_declaracion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp PIPE>;
+            bindings = <&kp BACKSLASH &kp MINUS>;
             label = "R_DECLARACION";
         };
     };
