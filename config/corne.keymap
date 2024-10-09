@@ -65,6 +65,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <40 46>;
+        };
     };
 
     macros {
