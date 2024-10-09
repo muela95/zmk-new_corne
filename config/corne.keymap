@@ -13,6 +13,10 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&lt {
+    tapping-term-ms = <300>;
+};
+
 / {
     behaviors {
         td0: td0 {
