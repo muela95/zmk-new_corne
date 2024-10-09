@@ -300,3 +300,5 @@ combos:
   l: [default]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
+- p: [40, 46]
+  k: $$mdi:apple-keyboard-caps$$
