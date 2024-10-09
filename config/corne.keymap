@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -54,7 +55,7 @@
         compatible = "zmk,combos";
 
         control {
-            bindings = <&kp LEFT_CONTROL>;
+            bindings = <&kp LEFT_WIN>;
             key-positions = <40 41>;
             layers = <0>;
         };
@@ -74,11 +75,11 @@
             //                                                      enter
 
             bindings = <
-&kp TAB             &kp Q  &kp W       &kp E           &kp R          &kp T         &kp UP_ARROW     &kp Y      &kp U      &kp I            &kp O    &kp P     &mt HOME END
-&kp LEFT_SHIFT      &kp A  &kp S       &kp D           &kp F          &kp G         &kp DOWN_ARROW   &kp H      &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
-&lt 2 LEFT_CONTROL  &kp Z  &kp X       &kp C           &kp V          &kp B         &kp LEFT_ARROW   &kp N      &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                           &kp K_MUTE  &lt 1 LEFT_WIN  &kp BACKSPACE  &kp DELETE    &kp RIGHT_ARROW  &kp ENTER  &kp SPACE  &lt 3 RIGHT_ALT
-                                                                                    &kp ENTER
+&lt 3 ESCAPE        &kp Q  &kp W       &kp E               &kp R          &kp T         &kp UP_ARROW     &kp Y      &kp U      &kp I            &kp O    &kp P     &mt HOME END
+&kp LEFT_SHIFT      &kp A  &kp S       &kp D               &kp F          &kp G         &kp DOWN_ARROW   &kp H      &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
+&lt 2 LEFT_CONTROL  &kp Z  &kp X       &kp C               &kp V          &kp B         &kp LEFT_ARROW   &kp N      &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kt LS(LA(TAB))
+                           &kp K_MUTE  &lt 1 LEFT_CONTROL  &kp BACKSPACE  &kp DELETE    &kp RIGHT_ARROW  &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT
+                                                                                        &kp ENTER
             >;
 
             label = "QWERTY";
@@ -86,7 +87,7 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "numeros";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -95,9 +96,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans           &kp EXCLAMATION  &kp DOUBLE_QUOTES  &trans           &kp DOLLAR       &kp PERCENT        &mmv MOVE_UP     &kp AMPERSAND  &kp N7  &kp N8     &kp N9  &kp PLUS      &kp BSPC
-&kp CAPSLOCK     &bt BT_CLR_ALL   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &trans         &kp N4  &kp N5     &kp N6  &kp MINUS     &kp PG_UP
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI    &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD    &mmv MOVE_LEFT   &trans         &kp N1  &kp N2     &kp N3  &kp ASTERISK  &kp PG_DN
+&trans           &kp EXCLAMATION  &kp DOUBLE_QUOTES  &trans           &kp DOLLAR       &kp PERCENT        &mmv MOVE_UP     &kp AMPERSAND  &kp N7  &kp N8     &kp N9  &kp RIGHT_BRACKET  &kp BSPC
+&kp CAPSLOCK     &bt BT_CLR_ALL   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3       &mmv MOVE_DOWN   &trans         &kp N4  &kp N5     &kp N6  &kp MINUS          &kp PG_UP
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI    &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD    &mmv MOVE_LEFT   &trans         &kp N1  &kp N2     &kp N3  &kp RIGHT_BRACE    &kp PG_DN
                                   &kp C_MUTE         &trans           &trans           &trans             &mmv MOVE_RIGHT  &kp INS        &kp N0  &kp SLASH
                                                                                                           &mkp LCLK
             >;
@@ -116,11 +117,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                      &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans     &trans
-                                                                       &mkp LCLK
+&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp RA(LEFT_BRACKET)   &kp RA(LEFT_BRACE)    &kp LPAR  &kp RPAR       &kp BSPC
+&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT     &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp PLUS  &kp MINUS      &kp DOUBLE_QUOTES
+&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp RA(RIGHT_BRACKET)  &kp RA(LBRC)          &kp RBRC  &kp SEMICOLON  &kp COLON
+                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans                 &trans
+                                                                           &mkp LCLK
             >;
 
             label = "SYMBOL";
@@ -139,6 +140,26 @@
 
             label = "FN";
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &kp MINUS  &kp SEMI  &kp APOS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp COMMA  &kp DOT    &kp FSLH  &trans
+                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                                                  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                                                  &trans
+            >;
         };
     };
 };
