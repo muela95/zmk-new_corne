@@ -39,7 +39,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: 'Sft+Alt+ $$mdi:keyboard-tab$$', h: toggle}
+  - '&alt_tab'
   - MUTE
   - $$mdi:alpha-w-box$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -47,7 +47,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   lower:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -107,8 +107,8 @@ layers:
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
-  - {t: 'AGr+ [', s: 'AGr+ {'}
-  - {t: 'AGr+ ]', s: 'AGr+ }'}
+  - {t: AGr+ ', s: AGr+ "}
+  - {t: AGr+ \, s: AGr+ |}
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
