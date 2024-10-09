@@ -69,7 +69,7 @@
         R_declaracion: R_declaracion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp Z>;
+            bindings = <&kp NON_US_BACKSLASH &kp Z>;
             label = "R_DECLARACION";
         };
     };
@@ -121,7 +121,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "simbolos";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -130,9 +130,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp DOLLAR     &kp RA(SINGLE_QUOTE)   &kp RA(BACKSLASH)      &kp LPAR   &kp RPAR       &kp BSPC
-&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS   &kp UNDER      &kp DOUBLE_QUOTES
-&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp RA(GRAVE)  &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp GRAVE  &kp LS(GRAVE)  &kp COLON
+&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp DOLLAR     &kp RA(SINGLE_QUOTE)   &kp RA(BACKSLASH)      &kp LPAR              &kp RPAR                  &kp BSPC
+&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS              &kp UNDER                 &kp DOUBLE_QUOTES
+&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp RA(GRAVE)  &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp NON_US_BACKSLASH  &kp LS(NON_US_BACKSLASH)  &kp COLON
                           &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET        &kp RIGHT_PARENTHESIS  &trans
                                                                            &mkp LCLK
             >;
