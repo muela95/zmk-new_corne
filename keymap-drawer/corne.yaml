@@ -108,7 +108,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
   - {t: 'AGr+ [', s: 'AGr+ {'}
-  - AGr+ {
+  - {t: 'AGr+ ]', s: 'AGr+ }'}
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -123,7 +123,7 @@ layers:
   - '*'
   - (
   - +
-  - {t: '-', s: _}
+  - _
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
