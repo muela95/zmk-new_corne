@@ -84,11 +84,11 @@
             //                                                      enter
 
             bindings = <
-&kp ESCAPE        &kp Q  &kp W       &kp E       &kp R          &lt 1 T       &kp UP_ARROW     &kp Y      &kp U      &kp I       &kp O    &kp P     &mt HOME END
-&kp LEFT_SHIFT    &kp A  &kp S       &kp D       &kp F          &lt 2 G       &kp DOWN_ARROW   &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X       &kp C       &kp V          &lt 3 B       &kp LEFT_ARROW   &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &alt_tab
-                         &kp K_MUTE  &caps_word  &kp BACKSPACE  &kp DELETE    &kp RIGHT_ARROW  &kp ENTER  &kp SPACE  &caps_word
-                                                                              &kp ENTER
+&kp TAB           &kp Q  &kp W       &kp E         &kp R          &lt 1 T       &kp UP_ARROW     &kp Y      &kp U      &kp I       &kp O    &kp P     &mt HOME END
+&kp LEFT_SHIFT    &kp A  &kp S       &kp D         &kp F          &lt 2 G       &kp DOWN_ARROW   &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X       &kp C         &kp V          &lt 3 B       &kp LEFT_ARROW   &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp LEFT_ALT
+                         &kp K_MUTE  &kp LEFT_ALT  &kp BACKSPACE  &kp DELETE    &kp RIGHT_ARROW  &kp ENTER  &kp SPACE  &caps_word
+                                                                                &kp ENTER
             >;
 
             label = "QWERTY";
@@ -126,10 +126,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp RA(SINGLE_QUOTE)   &kp RA(BACKSLASH)     &kp LPAR  &kp RPAR       &kp BSPC
-&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT     &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp PLUS  &kp UNDER      &kp DOUBLE_QUOTES
-&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp UNDER  &kp RA(RIGHT_BRACKET)  &kp RA(LBRC)          &kp RBRC  &kp SEMICOLON  &kp COLON
-                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &trans                 &trans
+&trans      &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp AMPERSAND  &kp RA(SINGLE_QUOTE)  &kp RA(BACKSLASH)      &kp LPAR  &kp RPAR       &kp BSPC
+&caps_word  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4     &mmv MOVE_DOWN   &kp AT         &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp PLUS  &kp UNDER      &kp DOUBLE_QUOTES
+&trans      &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5     &mmv MOVE_LEFT   &kp RA(GRAVE)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp RBRC  &kp SEMICOLON  &kp COLON
+                          &trans        &trans     &trans     &kp SPACE    &mmv MOVE_RIGHT  &kp RET        &trans                &trans
                                                                            &mkp LCLK
             >;
 
