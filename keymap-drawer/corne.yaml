@@ -1,12 +1,12 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  default:
+  QWERTY:
   - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
-  - {t: T, h: lower}
+  - {t: T, h: NUMBER}
   - $$mdi:arrow-up-bold$$
   - Y
   - U
@@ -19,7 +19,7 @@ layers:
   - S
   - D
   - F
-  - {t: G, h: raise}
+  - {t: G, h: SYMBOL}
   - $$mdi:arrow-down-bold$$
   - H
   - J
@@ -32,7 +32,7 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: '3'}
+  - {t: B, h: FN}
   - $$mdi:arrow-left-bold$$
   - N
   - M
@@ -41,7 +41,7 @@ layers:
   - {t: /, s: '?'}
   - '&R_declaracion'
   - MUTE
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:arrow-right-bold$$
@@ -49,7 +49,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  lower:
+  NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '"'
@@ -83,7 +83,7 @@ layers:
   - RGB SPI
   - RGB SPD
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Q
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -96,9 +96,9 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '0', s: )}
-  - {t: Sft+ 7, s: Sft+ &}
+  - {t: Sft+7, s: Sft+&}
   - $$mdi:mouse-left-click-outline$$
-  raise:
+  SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -107,10 +107,10 @@ layers:
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $
-  - {t: AGr+ ', s: AGr+ "}
-  - {t: AGr+ \, s: AGr+ |}
+  - {t: AltGr+', s: AltGr+"}
+  - {t: AltGr+\, s: AltGr+|}
   - {t: '=', s: +}
-  - {t: Sft+ 1, s: Sft+ !}
+  - {t: Sft+1, s: Sft+!}
   - ^
   - $$mdi:alpha-w-box$$
   - $$mdi:bluetooth-off$$
@@ -124,7 +124,7 @@ layers:
   - (
   - +
   - _
-  - {t: AGr+ 1, s: AGr+ !}
+  - {t: AltGr+1, s: AltGr+!}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -132,22 +132,22 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: AGr+ `, s: AGr+ ~}
-  - {t: 'AGr+ [', s: 'AGr+ {'}
-  - {t: 'AGr+ ]', s: 'AGr+ }'}
+  - {t: AltGr+`, s: AltGr+~}
+  - {t: 'AltGr+[', s: 'AltGr+{'}
+  - {t: 'AltGr+]', s: 'AltGr+}'}
   - \
-  - Sft+ \
+  - Sft+\
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: AGr+ 2, s: AGr+ @}
+  - {t: AltGr+2, s: AltGr+@}
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+3
   - $$mdi:mouse-left-click-outline$$
-  '3':
+  FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -295,9 +295,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [40, 41]
-  k: LEFT WIN
-  l: [default]
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
 - p: [40, 46]
