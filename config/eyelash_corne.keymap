@@ -48,6 +48,20 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <42 47>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
