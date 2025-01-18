@@ -93,10 +93,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp F7   &kp F8  &kp F9  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp F4   &kp F5  &kp F6  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp F1   &kp F2  &kp F3  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &kp F10  &trans
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp DOLLAR        &kp RA(APOS)           &kp RA(BACKSLASH)      &kp EQUAL      &kp LS(NUMBER_1)   &kp CARET
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp AT            &kp ASTERISK           &kp LEFT_PARENTHESIS   &kp PLUS       &kp BSLH           &kp RA(NUMBER_1)
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp RA(GRAVE)     &kp RA(LEFT_BRACKET)   &kp RA(RIGHT_BRACKET)  &kp BACKSLASH  &kp LS(BACKSLASH)  &kp PERCENT
+                                    &trans     &trans     &kp SPACE                                                             &kp RA(NUMBER_2)  &kp RIGHT_PARENTHESIS  &kp RA(NUMBER_3)
             >;
 
             sensor-bindings = <&scroll_encoder>;
