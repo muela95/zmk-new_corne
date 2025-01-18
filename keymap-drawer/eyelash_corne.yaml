@@ -124,7 +124,7 @@ layers:
   - '*'
   - (
   - +
-  - {t: \, s: '|'}
+  - {t: Sft+-, s: Sft+_}
   - AltGr+1
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
